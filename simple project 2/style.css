@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#all{
+    display:grid;
+    height: 790px;
+    background-color:pink;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:150px 500px 97px;
+    grid-template-areas:"hehe hehe hehe hehe hehe hehe hehe spa spa spa "
+                         "non non non non non non non non non non"
+                         " fot fot fot fot fot fot fot fot fot fot";
+
+}
+header{grid-area: hehe; background-color: red; }
+#span1{grid-area:spa; background-color: bisque;}
+header ul{
+    list-style-type: none;
+    line-height: 150px;
+    text-align: center;
+
+}
+header a{
+    text-decoration:none;
+    display:inline-block;
+    padding:0 200px;
+    color: white;
+    font-size: 15pt;
+
+}
+header li{
+    display:inline-block;
+
+
+}
+#span1 img{
+    height: 150px;
+    width: 150px;
+    border-radius:50%;
+}
+#span1 h1{
+    float:left;
+    line-height: 150px;
+    padding:0 25px;
+}
+header a:hover{
+    background-color: white;
+    color: black;
+    font-size: 20pt;
+    border:5px solid blue;
+
+   
+}
+main{
+    background-color: aquamarine;
+    margin: 10px;
+    background-color: ;
+    width: 60%;
+    height: 350px;
+    border: 12px double darkorchid;
+    text-align:center;
+    transform:translate(-300px,30px);
+
+}
+main h1{
+    text-align: center;
+    padding: 15px;
+    font-size: 40pt;
+}
+main label{
+    font-size:30pt;
+}
+main input{
+    margin: 10px;
+    width: 50%;
+    font-size:20pt;
+
+    
+}
+main input:focus{
+    background-color: blue;
+    font-size:24pt;
+    color:azure;
+
+}
+#eee{
+    width: 57.3%;
+}
+form button{
+    width: 30%;
+    height: 70px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+    font-size: 23pt;
+
+}
+footer{
+    text-align: center;
+    transform:translate(0,-60px);
+
+}
+footer textarea{
+    width: 70%;
+    height: 140px;
+    font-size: 20pt;
+    padding: 20px;
+
+}
+main{grid-area:non;}
+footer{grid-area:fot;}
+@media only screen and (max-width:1513px){
+    #all{
+        grid-template-areas:"hehe hehe hehe hehe hehe hehe hehe hehe hehe hehe "
+        " spa spa spa spa spa spa spa spa spa spa "
+        "non non non non non non non non non non"
+        " fot fot fot fot fot fot fot fot fot fot";
+        grid-template-rows:150px 150px 500px 97px;}
+        #span1{
+            display: flex;
+            justify-content: center;
+        }
+      
+    }
+    @media only screen and (max-width:970px){
+        header a{
+            text-decoration:none;
+            display:inline-block;
+            padding:0 100px;
+            color: white;
+            font-size: 15pt;
+        
+        }
+        main{
+            transform:translate(-200px,30px);
+
+        }
+
+    }
+    @media only screen and (max-width:633px){
+        main label{display: block;}
+        main input{width: 95%;}
+        #eee{width: 95%;}
+        main {
+            transform: translate(-60px,30px);     width: 80%;
+        }
+          
+
+    }
